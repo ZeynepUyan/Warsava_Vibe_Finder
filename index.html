@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Warsaw Vibe Finder</title>
+
+    <!-- *favicon -->
+    <link rel="icon" type="image/x-icon" href="a.png" />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--! BOOTSTRAP LINK !-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--! BOOTSTRAP ICON !-->
+ 
+
+  <body>
+    <div class="container">
+      <!-- HERO -->
+
+      <div class="hero-section">
+        <h1>Warsaw Vibe & Mood Explorer</h1>
+
+        <p></p>
+
+        <p>
+          Find your perfect places in Warsaw based on your current mood and
+          vibe! ⋆𐙚₊˚⊹♡
+        </p>
+      </div>
+
+      <!-- GRID -->
+
+      <div class="dashboard-grid">
+        <!-- FILTER PANEL -->
+
+        <aside class="filter-card">
+          <h4>🔮 Match Your Vibe</h4>
+
+          <!-- MOOD -->
+
+          <div class="form-group">
+            <label> CURRENT MOOD </label>
+
+            <select id="moodFilter" class="custom-select">
+              <option value="Cozy">
+                
+                 Cozy (Warm & Comfortable) 👑
+              </option>
+
+              <option value="Main Character">
+                Main Character ✨ (To see and be seen)
+              </option>
+
+              <option value="Quiet">Quiet 📚 (Study & Focus)</option>
+
+              <option value="Spontaneous">
+                Spontaneous ⚡ (Adventure & Energy)
+              </option>
+            </select>
+          </div>
+
+          <!-- ACTIVITY -->
+
+          <div class="form-group">
+            <label> EXPECTED ACTIVITY </label>
+
+            <select id="activityFilter" class="custom-select">
+              <option value="food">Food 🍔 (Tasty meals)</option>
+
+              <option value="drinks">Drinks 🍹 (Cocktails & coffee)</option>
+
+              <option value="cool place to sit">
+                Cool Place to Sit 🛋️ (Chilling out)
+              </option>
+
+              <option value="all">All 🌟 (The full experience)</option>
+            </select>
+          </div>
+
+          <!-- BUDGET -->
+
+          <div class="form-group">
+            <label> BUDGET SCALE </label>
+
+            <select id="budgetFilter" class="custom-select">
+              <option value="zł">zł (Student Friendly / Cheap)</option>
+
+              <option value="złzł">złzł (Moderate / Fair)</option>
+
+              <option value="złzłzł">złzłzł (Fine Dining / Splurge)</option>
+            </select>
+          </div>
+
+          <!-- BUTTON -->
+
+          <button id="filterBtn" class="submit-btn">Discover Places ✨</button>
+        </aside>
+
+        <!-- CONTENT -->
+
+        <main class="content-area">
+          <h3>📍 Curated Warsaw Destinations</h3>
+
+          <!-- JS LOADS CARDS HERE -->
+
+          <div id="placesContainer" class="places-grid"></div>
+        </main>
+      </div>
+    </div>
+
+    <!-- APP -->
+
+    <script type="module" src="app.js"></script>
+
+    <script type="module" src="places.js"></script>
+
+    <script type="module" src="card.js"></script>
+
+    <script type="module" src="filters.js"></script>
+  </body>
+</html>
